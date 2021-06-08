@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list</title>
+    <link rel="stylesheet" href="checklist.css">
+</head>
+<body>
+    <input id="inp">
+    <ul id="list"></ul>
+    <script>
+        let checklist = document.querySelector('#list');
+        let inp = document.querySelector('#inp');
+
+        inp.addEventListener('keydown', function(e)
+        {
+            if (e.key == 'Enter')
+            {
+                if (this.value == "")
+                {
+                    alert("Напишите хоть что-то...");
+                }
+                else
+                {
+                    let li = document.createElement('li');
+                    list.appendChild(li);
+
+                    let text = document.createElement('span');
+                    text.innerHTML = this.value;
+                    this.value = '';
+                    li.appendChild(text);
+
+                    let box = document.createElement('input');
+                    box.type = 'checkbox';
+                    li.prepend(box);
+                    box.addEventListener('click', function(event)
+                    {
+                        text.classList.toggle('done');
+                    });
+                    
+                    let del = document.createElement('a');
+                    del.innerHTML = 'X';
+                    del.href = '';
+                    li.appendChild(del);
+                    del.addEventListener('click', function(event)
+                    {
+                        li.parentElement.removeChild(li);
+                        event.preventDefault();
+                    });
+                }
+            }
+        })
+    </script>
+</body>
+</html>

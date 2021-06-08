@@ -1,0 +1,36 @@
+ul
+{
+    text-align: center;
+}
+
+li
+{
+    text-align: center;
+}
+
+span
+{
+    text-align: center;
+}
+
+input
+{
+    margin: 5px;
+    text-align: center;
+}
+
+a
+{
+    margin: 5px;
+}
+
+#inp
+{
+    margin-left: 770px;
+}
+
+.done
+{
+    text-decoration-line: line-through;
+    color: gray;
+}
