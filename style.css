@@ -1,0 +1,258 @@
+html
+{
+    font-family: 'Staatliches', cursive;
+}
+
+h2
+{
+font-size: 34px;
+line-height: 42px;
+text-align: center;
+margin: 0 auto;
+}
+
+ul
+{
+list-style: none;
+padding: 0px;
+}
+
+a
+{
+text-decoration: none;
+color: #070707;
+}
+
+body
+{
+font-style: normal;
+font-size: 18px;
+line-height: 22px;
+font-weight: normal;
+color: #070707;
+max-width: 940px;
+margin: 0 auto;
+}
+
+.header
+{
+position: fixed;
+display: flex;
+flex-wrap: wrap;
+align-items: flex-end;
+justify-items: space-between;
+padding-top: 33px;
+background-color: #ffffff;
+width: 940px;
+}
+
+.header_list
+{
+    display: flex;
+    padding: 0;
+}
+
+.header_item
+{
+margin-right: 155px;
+}
+
+.header_item:last-child
+{
+margin-right: 0px;
+}
+
+.header_link:hover
+{
+background: #D3D3D3;
+}
+
+.header_link
+{
+color: #828282;
+text-decoration: none;
+}
+
+.header_link.home
+{
+color: #070707;
+}
+
+.home
+{
+padding-top: 128px;
+}
+
+.home_info
+{
+display: flex;
+justify-content: space-between;
+align-items: flex-end;
+margin-bottom: 30px;
+}
+
+.home_title
+{
+height: 120px;
+max-width: 124px;
+font-size: 47.3392px;
+line-height: 59px;  
+}
+
+.home_description
+{
+height: 92px;
+max-width: 160px;
+margin: 0 auto;
+}
+
+.lang-switcher 
+{
+height: 70px;
+width: 80px;
+}
+
+.lang-switcher_link 
+{
+color: #828282;
+}
+
+.lang-switcher_link.active 
+{
+color: #000000;
+}
+
+.home_img
+{
+margin-bottom: 104px;
+}
+
+.about
+{
+height: 506px;
+background-color: #F6F6F6;
+padding-top: 120px;
+}
+
+.about_title
+{
+margin-bottom: 18px;
+}
+
+.about_description 
+{
+max-width: 485px;
+margin: 0 auto;
+margin-bottom: 30px;
+text-align: center;
+}
+
+.about_description--smaller 
+{
+max-width: 400px;
+}
+
+.about_description--smallest 
+{
+max-width: 340px;
+}
+
+.skills
+{
+padding-top: 91px;
+height: 610px;
+}
+
+.skills_sub
+{
+margin: 69px auto 83px;
+text-align: center;
+}
+
+.skills_list
+{
+display: flex;
+flex-wrap: wrap;
+align-items: flex-end;
+justify-items: space-between;
+padding: 0px;
+}
+
+.skills_item
+{
+margin-right: 90px;
+}
+
+.skills_item:last-child
+{
+margin-right: 0px;
+}
+
+.portfolio
+{
+height: 2100px;
+background-color: #F6F6F6;
+padding-top: 100px;
+}
+
+.portfolio_item
+{
+margin: 0 auto;
+text-align: center;
+margin-bottom: 99px;
+}
+
+.portfolio_img
+{
+margin-bottom: 45px;
+}
+
+.portfolio_link:hover
+{
+background: #D3D3D3;
+}
+
+.contacts
+{
+padding-top: 114px;
+height: 622px;
+}
+
+.contacts_text
+{
+margin: 20px auto 30px;
+text-align: center;
+max-width: 275px;
+}
+
+.contacts_text--small
+{
+margin: 45px auto;
+text-align: center;
+max-width: 320px;
+color: #828282;
+}
+
+.contacts_list
+{ 
+display: flex;
+flex-wrap: wrap;
+align-items: flex-end;
+padding: 0px;
+margin: 0 auto;
+}
+
+.contacts_item
+{
+margin-right: 60px;
+}
+
+.contacts_item:first-child
+{
+margin-left: auto;
+}
+
+.contacts_item:last-child
+{
+margin-right: auto;
+}
