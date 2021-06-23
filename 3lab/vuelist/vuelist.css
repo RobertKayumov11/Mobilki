@@ -1,0 +1,78 @@
+.title
+{
+    color: #ff4444;
+    text-shadow: 0 0 5px #e72650,
+    0 0 10px #e72650,
+    0 0 20px #e72650,
+    0 0 40px #e72650,
+    0 0 80px #e72650,
+    0 0 90px #e72650,
+    0 0 100px #e72650,
+    0 0 150px #e72650;
+}
+
+body
+{
+    font-size: 22px;
+    color: #000000;
+    max-width: 840px;
+    margin: 0 auto;
+    text-align: center;
+    background-image: url("backies.png")
+}
+
+.input
+{
+    color: #ff6868;
+    width: 740px;
+}
+
+.list
+{
+    list-style: none;
+    background-color: #ff5f20;
+    padding: 30px;
+    border: 4px double #070707;
+    text-align: left;
+    text-shadow: 0 0 5px #e72650,
+    0 0 10px #e72650,
+    0 0 20px #e72650,
+    0 0 40px #e72650,
+    0 0 80px #e72650,
+    0 0 90px #e72650,
+    0 0 100px #e72650,
+    0 0 150px #e72650;
+}
+
+.task
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-items: space-between;
+    width: 780px;
+    margin: 5px 0;
+}
+
+.text
+{
+    width: 700px;
+    overflow-wrap: break-word;
+}
+
+.checkbox
+{
+    margin-right: 20px;
+}
+
+.deleteButton 
+{
+    margin-left: auto;
+}
+
+.done
+{
+    margin-left: 37px;
+    text-decoration: line-through;
+    color: #000000;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B R U H</title>
+    <link rel="stylesheet" href="vuelist.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+</head>
+<body>
+    <div id="app">
+        <header class="header">
+            <h1 class="title">Список задач</h1>
+            <input type="text" 
+                    placeholder="Введите.. Ну, что-нибудь введите" 
+                    class="input" 
+                    :value="valInput"
+                    @input="handleInput"
+                    @keyup.enter="add()">
+            <input type="submit" value="Приклеить" 
+                    @click="add()">
+        </header>
+        <main>
+            <ul class="list">
+                <li class="task" v-for="(task, taskid) in tasks" :key="task.id">
+                    <input type="checkbox" class="checkbox"
+                            @change="check(taskid)">
+                    <div class="text">{{task.title}}</div>
+                    <button class="deleteButton" @click="del(taskid, 'work')">X</button>
+                </li>
+                <li class="task" v-for="(task, taskid) in completeTasks" :key="task.id">
+                    <div class="text done">{{task.title}}</div>
+                    <button class="deleteButton" @click="del(taskid)">X</button>
+                </li>
+            </ul>
+        </main>
+    </div>
+    <script src="vuelist.js"></script>
+</body>
+</html>
